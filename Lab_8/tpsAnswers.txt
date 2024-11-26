@@ -1,0 +1,10 @@
+Neil Khapre
+Prachi Trivedi
+Kalea Knox
+Efosa Omorogieva 
+
+TPS 1.
+5. We do not need to declare n or load its address in anymore since we already loaded $t3 in
+
+TPS 2.
+1. It should be a pattern of returning 1, then returning 3, returning 3, then returning 1

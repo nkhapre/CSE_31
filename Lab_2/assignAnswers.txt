@@ -1,0 +1,15 @@
+Assignment 1
+1. What caused the segmentation fault was in line 25, the scanf line in the while loop did not pass the input as a reference
+2. You can fix this line by adding an '&' symbol in the scanf statement
+
+3. The sum is not being updated because we are not passing the reference of sum through the function and it is not being updated
+correctly 
+4. In order to fix the error we just make sum a double pointer at every instance it is used and then pass it as a reference
+when we call it in the function
+
+Assignment 2
+1.This output is expected
+2. This output is unexpected. The bug is that the previous second string is not cleared and we need to add a terminator line
+3. This output is technically expected because we set the length of the string to 10 when we declared it.
+
+

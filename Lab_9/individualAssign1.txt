@@ -1,0 +1,83 @@
+Line #7:    addi $s0, $zero, 25
+MIPS to Machine Code:
+
+Instruction: I-type
+Opcode: 001000 (for addi)
+rs: $zero = 00000
+rt: $s0 = 10000
+Immediate: 25 = 0000 0000 0001 1001
+Binary: 001000 00000 10000 0000 0000 0001 1001
+Hexadecimal: 0x20100019
+
+Machine Code to MIPS:
+
+Opcode 001000 translates to addi
+$s0 as the destination register
+$zero as the source register
+Immediate value of 25
+
+Line #14: 	slt $t0, $s1, $s0:
+MIPS to Machine Code:
+
+Instruction: R-type
+Opcode: 000000
+rs: $s1 = 10001
+rt: $s0 = 10000
+rd: $t0 = 01000
+shamt: 00000
+funct: 101010 (for slt)
+Binary: 000000 10001 10000 01000 00000 101010
+Hexadecimal: 0x0232802A
+
+Machine Code to MIPS:
+
+Opcode 000000 with funct 101010 translates to slt
+$t0 as the destination register
+$s1 as the first source register
+$s0 as the second source register
+
+Line #17: 	bne $t0, $zero, LESS:
+MIPS to Machine Code:
+
+Instruction: I-type
+Opcode: 000101 (for bne)
+rs: $t0 = 01000
+rt: $zero = 00000
+Immediate: This is the relative address where control should jump if $t0 is not equal to $zero.
+
+Binary:
+000101 01000 00000 0000 0000 0100
+Hexadecimal Form:
+
+Break into nibbles: 0001 0101 0000 0000 0000 0100
+Convert each nibble to hex: 1 5 0 0 0 4
+Combined hex: 0x15000004
+Back to MIPS:
+Machine Code to MIPS:
+Given the machine code 0x15000004, here's how you would translate it back to MIPS:
+
+Opcode 000101 identifies it as a bne instruction.
+Registers are $t0 and $zero.
+Offset is calculated for 4 instructions ahead from the next instruction, which is the effective address 0x00400020.
+
+
+Line #20: J GREQ
+MIPS to Machine Code:
+
+Instruction: J-type
+Opcode: 000010 (for j)
+Address: The provided address for GREQ is 0x00400030. 
+
+Steps:
+1. Convert address 0x00400030 to decimal: 0x00400030=4194320
+2. 4194320/4=1048580
+3. 1048580=0x0010000C
+
+Binary:
+000010 0000 0100 0000 0000 0000 0011 0000
+Machine Code to MIPS:
+Given the machine code 0x08040030, here's how you would translate it back to MIPS:
+
+The opcode 000010 signifies a j instruction.
+The address field 0000 0100 0000 0000 0000 0011 0000 corresponds to the location to jump to. 
+

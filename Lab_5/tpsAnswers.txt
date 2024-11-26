@@ -1,0 +1,29 @@
+Neil Khapre
+Prachi Trivedi
+Kalea Knox
+Efosa Omorogieva 
+
+TPS 1
+1. Mars stands for "MIPS Assembler and Runtime Simulator"
+5. 
+    a. You can load an assembly file by clicking file, then open, and loading it in.
+    b. You can assemble the program by clicking the wrench and screwdriver icon
+    c. You can run the program in multiple ways, there is a green button to run it to completion and then also to step it through each line
+    d. No you have to first click assemble for the green icon to become available
+    e. You would click the green button with a 1 next to it
+    f. You click the rewind button to reset the program and then hit the green button again.
+
+TPS 2
+1. .data defines the program data and you put your program in it. 
+.word declares a word variable of 4 bytes in the static you would put a variable you want to use later in it with a value
+.text is for the program instructions
+2. Line 10 declares a function fib and states to break if $t3 and $0 are equal and move on to finish
+3. Line 15 says to jump to fib which makes this a recursive function
+4. First you have to assemble the program, then go to the execute tab, and check off the tab that say Bkpt
+5. I would continue executing my code by stepping through it.
+6. You go to registers and manually click in to edit the register
+7. n is store in 0x00000000 in $t3
+8. syscall are kind of like native commands that change depending on what set as the argument. In line 19 it is 1 which will print out
+ an integer that is store in $a0. Line 21 the call is 10 which calls for the termination of the program.
+
+ 

@@ -1,0 +1,5 @@
+make int x and then input x
+make while loop with condition x != 0
+print condition with int count for value
+find value of sum of digits in number
+

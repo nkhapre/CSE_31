@@ -1,0 +1,23 @@
+Neil Khapre
+Prachi Trivedi
+Kalea Knox
+Efosa Omorogieva 
+
+TPS 1
+1. A function takes in input, performs tasks, and returns a value, a method procedure does not return a value and a method is a function that
+belongs to a class 
+4. It is Line 12 and we jump to Line 20 where SUM is written. The label SUM then adds the two numbers together and stores it in a third register
+5. We could not use j instead of jr because jr is jump register and is used to return a value of a function in an address. J is just jump
+and takes in an label.
+6. It is supposed to be saved in line 21, in the register $v0. The value of the address is 15. This makes sense because we are adding n and m, 
+which are 5 and 10 respectively.
+7. There is an error 
+8. The program should return to 0x00400034
+9. It is not correct it is off by 12
+10. The output is 15
+12. If we just use jal SUM we do not need to save the register
+
+TPS 2
+1. The output should be 38
+3. SUM knows where to go because of JAL which is jump and link 
+5. The original value is overwritten, this is a problem because we are going to use the original value of x again 

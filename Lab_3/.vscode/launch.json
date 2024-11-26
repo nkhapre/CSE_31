@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/neilkhapre/Desktop/CSE-31/Lab_3",
+      "program": "/Users/neilkhapre/Desktop/CSE-31/Lab_3/build/Debug/outDebug"
+    }
+  ]
+}

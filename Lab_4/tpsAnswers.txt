@@ -1,0 +1,21 @@
+Prachi Trivedi, Efosa Omorogieva, Kalea Knox
+
+TPS 1
+1. I would expect it to print 2 in hex format which is also 2.
+2. I would expect it to print just 0x41 + 2 because of the for loop written. 
+3. It prints a string of numbers which I am assuming is 'A' + 2 in hex format.
+4. Now it prints out only 2 which is a little confusing.
+5. 
+    a. Only 1 array is allocated for in this program, four_inits
+    b. No they are not pointing to the same location.
+
+6. The difference in addresses is 4 which means they are stored as ints
+8. The difference in addresses is only 1 which means they are being stored as chars as a char only takes up 1 space.
+10. C accesses memory by the type of variable it is not the increment of the for loop, if it is an int it will be 4 spaces versus a char
+which is only 1 space.
+
+TPS 2
+1. Line 8 allocates memory for a 2d array on the heap dynamically, which is during the runtime of the program.
+2. We can access the ith value of an array using arr[i];
+4. We need to pass the size as an argument so we know how much to print when we do our for loop as the size of an array is not given 
+in C 

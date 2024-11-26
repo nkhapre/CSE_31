@@ -1,0 +1,41 @@
+Neil Khapre
+
+TPS 1
+
+4. Machine instruction contains 32 bits
+5. There are r-type, i-type, and j-type.
+Two r-type instructions are sw and lw, two i-type instructions are divide and double, and two pseudoinstructions are 
+branch less than and branch greater than
+6. 
+    a. Add immediate is a core instruction and has 3 fields: $s0, $zero, 25.
+    b. 1,2 and it is 8 hex. Rs is $zero its value is 0, rt is $s0 and its value is 16, and the immediate is 25 its value is 0x19
+    c. The machine code is 001000 00000 10000 0000 0000 0001 1001, the hex code is 20200019
+7.
+    a. This code in hex is 0230802A and the binary is 0000 0010 0011 0000 0100 0000 0010 1010
+    b. The instruction type is R type and we can tell because there are 6 fields in the binary code. The fields are the opcode, the rs, rt, rd, shamt and
+    funct
+    c. The opcode is 0x00, the rs is 0x10, the rt is 0x10, the rd is 0x00, the shamt is 0x00, and the funct is 0x2A.
+    d. This is the slt operation and we can tell by the funct field. The rs and rt maps to $s0 
+    indicated by 10000, the rd maps to $t2 which indicated by 01010.
+    e. The mips instruction is slt $t0, $s1, $s0, this is the same as the text segment.
+8. 
+    a. This is an I-type instruction 
+    b. The opcode is 0x05, the rs is 0x08, and rt is 0x00. 
+    c. The label is LESS and the address is 0x0040001c
+    d. No we do not put the address of the immediate field of the instruction because it is not absolute.
+    e. You first have to find the address of the bne line adn the LESS line which is 0x00400014 and 0x0040001c. Then find the difference between the addresses
+    and divide by 4 to find the final answer which is 1.
+    f. The binary is 000101 01000 00000 0000 0000 0000 0001 the hex is 0x15000001 which matches the code in the text section.
+
+9. 
+    a. This is a j-type instruction and there are onlu 2 fields.
+    b. The opcode in hex is 0x02
+    c. The label is the GREQ label and the address is 0x00400030
+    d. We can use 26 bits in this section of the field. We can "squeeze" the address into the field by utilizing the fact that addresses are multiples of 4
+    and the last two bits will always be 0 which means we can just drop the last two bits.
+    The binary is 0000 0000 0100 0000 0000 001.
+    e. The binary code is 000010 100 0000 0000 0000 0000 0011 00 and the hex code is 0x0810000c, which does match the text segment.
+   
+    
+  
+ 

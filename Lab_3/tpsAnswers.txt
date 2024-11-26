@@ -1,0 +1,17 @@
+TPS 1
+1. Static for global variables, stack for local variables,
+and heap for dynamic variables
+
+2. 
+    a. There are 3 variables declared
+    b. There are 2 pointers, one of them points to an int the other points to a pointer of an int
+    c. These are stored in the stack
+    d. Since the address of num is being assigned to ptr it will point to the heap
+
+TPS 2
+1. This program is a linked list that makes memory for the first node, called head.
+2. I have inserted the code
+3. There is a couple things, one is that the struct memory is stored in order which we can see by the end of the addresses
+incrementing by 4. Also head is stored separately from the rest of the node struct.
+
+

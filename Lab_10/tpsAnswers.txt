@@ -1,0 +1,41 @@
+Prachi Trivedi
+Efosa Omorogieva
+Kalea Knox
+
+TPS 1
+1. A cache is used to store data that we can retrieve in the future. We need it because it is faster than retreiving the actual data
+4. To offset a block size of 16 you need 4 bits as we use log base 2 to the block size, but it is not practical to use 4 bits for a size of 16 as
+we then need 4 bits for every 1 byte.
+5. We need 6 bits for a block size of 64, and to represent it as a function is n = log2(N) bits
+6. We know the total block size by multiplying the number of blocks by the block size.
+7. The remaining bits are stored in the cache's tag. This is important as we can then tell the other data in the cache.
+8. 
+    a. 2^20 bits which is 1MB
+    b. The offset bits is 3
+    c. We need 16 blocks
+    d. 4 bits.
+    e. The number of tag bits is the offset minus the index which is 16-3 so 13 tag bits
+    g. Each row of the cache comprises 13 bits for the tag, 1 bit for the 
+       valid bit, 1 bit for the dirty bit, and 8*8 bits for the data block, 
+       totaling 79 bits per row.
+
+TPS 2
+1. The disadvantage of a direct mapped cache is that if two blocks are in the same location and are accessed, they will be swapped when accessing
+which is known as thrashing.
+3. We need 8 bits from log base 2 of 1024/4
+4.  
+    a.The size of main memory is approximately 2^20 bytes, equivalent to 1MB.
+    b. The number of bits required for the offset is determined by log 
+       base 2 of 8, resulting in 3 bits.
+    c. With a cache size of 128 bytes and a block size of 8 bytes, there 
+       are 16 blocks.
+    d.  The cache contains 8 sets, derived from dividing the number of blocks 
+       by 2, resulting in 8 sets.
+    e.  The number of index bits is determined by log base 2 of 8, resulting 
+       in 3 bits.
+    f.  Subtracting the offset and index bits from the total address bits 
+       (20 bits) yields 14 bits for the tag.
+    h.  Each row of the cache comprises 14 bits for the tag, 1 bit for 
+       the valid bit, 1 bit for the dirty bit, and 8*8 bits for the data 
+       block, totaling 80 bits per row.
+

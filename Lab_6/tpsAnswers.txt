@@ -1,0 +1,25 @@
+Neil Khapre
+Prachi Trivedi
+Kalea Knox
+Efosa Omorogieva 
+
+TPS 1
+1. The starting address for the Text segment is 0x00400000 and for Data segment is 0x10010000
+2. The two terms differs in the fact that Basic Assembly doesn't use any labels and can't jump to different lines while Source Assembly 
+has register labels and can jump to functions
+3. The difference is 20 bytes
+4. 8 columns
+5. The addresses increment by 4
+6. m:	.word 20
+7. 'm' is stored in the address 0x10010004
+8. str1: .asciiz "I love CSE31!"
+9. The three addresses are 0x10010008, 0x1001000c, 0x10010010
+10. Yes there are terminator characters and values
+11. li      $v0, 4		
+    la a0, str1
+	syscall	
+12. la $t3 means "load address" $t3 and the value n will be stored in it
+
+TPS 2
+1. The processesor runs smoother with less inputs
+2. 

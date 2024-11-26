@@ -1,0 +1,39 @@
+TPS 1
+Neil Khapre
+Prachi Trivedi
+Kalea Knox
+Efosa Omorogieva 
+
+2. 
+Mac terminal tutorial: https://support.apple.com/guide/terminal/welcome/mac
+
+Linux terminal tutorial: https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
+
+Powershell terminal tutorial: https://learn.microsoft.com/en-us/windows/terminal/
+
+
+TPS 2
+1. You can open a Mac terminal by clicking Launchpad then searching for "Terminal," 
+or open an IDE such as Visual Studio Code and click new terminal at the top.
+    a. Yes
+    b. I would want more than 1 terminal open so I could run different programs at the same time.
+
+2. The command is "ls" to list current contents of a folder.
+
+3. From my current directory inside this CSE-31 folder I just have to type "cd ~/Desktop" to go back to my Desktop.
+
+4. To create a new directory called "CSE-31" I would type "mkdir CSE-31" in the terminal.
+
+
+TPS 3
+1. 
+GCC in linux terminal: https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/
+GCC in Powershell terminal: https://www.quora.com/Is-there-a-way-to-install-GCC-or-G++-on-Windows-PowerShell
+
+3. I used gcc main.c -o main to compile my code
+4. There should be an executable file called main or whatever you decide to name it created.
+5. -c compiles files and creates an object file without an executable. You can then link the object files to make an executable
+6. -g will include debugging information in the executable file.
+7. Using #3 as an example I would change "gcc main.c -o main" to "gcc main.c -o cselab1"
+8. It makes a file called a.out for Mac and a.exe for Windows as well
+9. I use ./main

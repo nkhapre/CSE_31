@@ -1,0 +1,6 @@
+1. Intel Core i5-5675C is the full name
+2.  There are 4 levels and yes there is a separate cache instruction for level 1 
+3. L1 is 4 x 32 KB, L2	is 4 x 32 KB, L3	4 x 256 KB, L4 is	4 MB x 128 MB
+4. 64 bytes
+5. They are direct mapped or or inclusie and shared between all cores.
+6. The tag = 20B index = 6B, offset = 6B

@@ -1,0 +1,30 @@
+TPS 1
+Neil Khapre
+Prachi Trivedi
+
+Tutorials:
+https://ardupilot.org/dev/docs/debugging-with-gdb-using-vscode.html
+https://www.muchen.ca/documents/CPEN411/vscode-debug.html
+https://stackoverflow.com/questions/66470788/how-to-set-gdb-as-debugger-for-the-c-c-extension-pf-vscode-on-macos
+
+TPS 2
+1. I just use gcc punishment.c which creates an a.out file
+2. I then use lldb <name of executable file>
+3. I use lldb punish then type run in the command line
+4. A breakpoint is the point where the code stops. You can set it by click the red dot next to the number of what line it is.
+5. To run the program line by line you can use step
+6. To see the variable we use print + <variable name>
+7. You can use c or continue
+8. We exit from LLDB with 'exit'
+
+TPS 3
+1. There are 2 pointers in the first line of main(): *px and *py
+2. The values will probably be all garbage values, however for me x and arr[0] is a garbage value while y is always 0. 
+I know C doesn't initialize variables to 0 to save space but I'm not sure y is still equal to 0.
+3. You prevent them by initializing the values to 0.
+4. I used printf and for the type to display %p with &x and &y
+5. I've adjusted the code
+6. I have inserted the code
+7. I added the code
+8. Yes this result makes sense it is the same as the address as arr[0] because arr is a pointer to the first position in arr.
+
